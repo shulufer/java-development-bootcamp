@@ -29,7 +29,7 @@ public class Blackjack {
         int computerScore = computerCardNumber + computerCardNumberTwo;
         System.out.println("Computer Card:\n" + computerCard + "\n and a \n" + faceDown());
         System.out.println("");
-        // System.out.println("Computer score is :" + computerScore);
+
 
         //Task 3 – Wait for the user to press enter.
         //Task 4 – Get two random cards.
@@ -42,15 +42,60 @@ public class Blackjack {
         //Task 6 – Get two random cards for the dealer.
         //       – Print: The dealer shows \n" + <first card> + "\nand has a card facing down \n" + <facedown card>
         //       – Print: \nThe dealer's total is hidden
+        if (yourScore > 21) {
+          System.out.println("You lose :(");
+
+        }
+
 
         while (!hitOrStay().equals("stay")) {
 
+          if (yourScore >= 21) {
+            break;
+          }
           int newNumber = drawRandomCard();
           String newCard = cardString(newNumber);
           yourScore = yourScore + newNumber;
-          computerScore = computerScore + newNumber;
           System.out.println("New card is a\n " + newCard);
           System.out.println("Your score is :" + yourScore);
+          if (yourScore >= 21) {
+            break;
+          }
+
+        }
+
+
+        System.out.println("Computer Card:\n" + computerCard + "\n and a \n" + computerCardTwo);
+        System.out.println("Computer score is :" + computerScore);
+        System.out.println("");
+
+        while ((yourScore <= 21) && (computerScore <= 17)) {
+          System.out.println("");
+          System.out.println("Computer take a card.");
+          System.out.println("");
+          int newComputerNumber = drawRandomCard();
+          String newComputerCard = cardString(newComputerNumber);
+          computerScore = computerScore + newComputerNumber;
+          System.out.println("Computer's new card is a\n " + newComputerCard);
+          System.out.println("Computer score is :" + computerScore);
+
+        }
+
+        if (yourScore > 21) {
+          System.out.println("You lose :(");
+        } else if (computerScore > 21) {
+          System.out.println("You win :)");
+        } else if (yourScore > computerScore) {
+          System.out.println("Your score is :" + yourScore);
+          System.out.println("Computer score is :" + computerScore);
+          System.out.println("You win :)");
+        } else  if (yourScore < computerScore) {
+          System.out.println("Your score is :" + yourScore);
+          System.out.println("Computer score is :" + computerScore);
+          System.out.println("You lose :(");
+        } else {
+          System.out.println("Everybody win :) :) :)");
+        }{
 
         }
 
