@@ -1,5 +1,6 @@
 import java.time.LocalDate;
 
+
 /**
  * Contact
  */
@@ -17,7 +18,11 @@ public class Contact {
     this.age = this.toAge(birthDate);
   }
 
-  public Contact(Contact contact) {
+  public Contact(Contact source) {
+    this.name = source.name;
+    this.phoneNumber = source.phoneNumber;
+    this.birthDate = source.birthDate;
+    this.age = source.age;
   }
 
   public int toAge(String birthDate) {
@@ -44,6 +49,18 @@ public class Contact {
   private void setAge(String birthDate) {
     this.age = this.toAge(birthDate);
   }
+
+  public String getName() {
+    return name;
+  }
+
+  public String toString() {
+    return "Name: " + this.name + "\n" +
+        "Phone number: " + this.phoneNumber + "\n" +
+        "Birth Date: " + this.birthDate + "\n" +
+        "Age: " + this.age + " year old\n";
+}
+
 
 
 
