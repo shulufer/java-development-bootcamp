@@ -20,27 +20,38 @@ public class Test {
     // Uncomment the following line to test invalid input for the constructor
     // City city2 = new City("", "USA", 8500000);
 
-    CityPopulationTracker tracker = new CityPopulationTracker();
+    // CityPopulationTracker tracker = new CityPopulationTracker();
 
-    // Test the addCity method
-    tracker.addCity(new City("New York", "USA", 8550405));
-    tracker.addCity(new City("Los Angeles", "USA", 3971883));
-
-
-    // Test the getCity method
-    City nyCity = tracker.getCity("New York");
-    System.out.println("Population of New York: " + nyCity.getPopulation());
+    // // Test the addCity method
+    // tracker.addCity(new City("New York", "USA", 8550405));
+    // tracker.addCity(new City("Los Angeles", "USA", 3971883));
 
 
-    // Test the setCity method
-    City updatedNyCity = new City("New York", "USA", 8600000);
-    tracker.setCity(updatedNyCity);
+    // // Test the getCity method
+    // City nyCity = tracker.getCity("New York");
+    // System.out.println("Population of New York: " + nyCity.getPopulation());
 
 
-    // Verify that the city data was updated
-    nyCity = tracker.getCity("New York");
-    System.out.println("Updated population of New York: " + nyCity.getPopulation());
+    // // Test the setCity method
+    // City updatedNyCity = new City("New York", "USA", 8600000);
+    // tracker.setCity(updatedNyCity);
+
+
+    // // Verify that the city data was updated
+    // nyCity = tracker.getCity("New York");
+    // System.out.println("Updated population of New York: " + nyCity.getPopulation());
 
   }
+
+  public static boolean isNullOrBlank(String input) {
+    if ((input.equals(null)) || (input.equals(""))) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+
+
 
 }
