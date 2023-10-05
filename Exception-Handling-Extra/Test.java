@@ -136,7 +136,7 @@ public class Test {
     while (true) {
         System.out.print("\nPlease enter a valid issue number (greater than 0): ");
 
-        // First check if the next input is not an integer
+
         if (!scanner.hasNextInt()) {
           scanner.next();
           continue;
@@ -149,7 +149,23 @@ public class Test {
         }
 
     }
+  }
+
+  public static int promptForPublicationYear(Scanner scanner) {
+    while (true) {
+        if (!scanner.hasNextInt()) {
+          scanner.next();
+          continue;
+        }
+        int scanInt = scanner.nextInt();
+        if (scanInt <= 0) {
+          continue;
+        } else {
+          return scanInt;
+        }
+    }
 }
+
 
 
 
