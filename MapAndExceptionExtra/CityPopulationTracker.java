@@ -13,5 +13,11 @@ public class CityPopulationTracker {
     return new City(city);
   }
 
+  public void setCity(City city) {
+    cityPopulations.put(new String(city.getName()), new City(city));
+  }
+
+
+
 
 }
