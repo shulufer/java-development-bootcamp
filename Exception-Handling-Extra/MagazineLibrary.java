@@ -17,4 +17,9 @@ public class MagazineLibrary {
 
   }
 
+  public void setMagazine(Magazine newMagazine, int i) {
+    magazines.add(i, new Magazine(newMagazine));
+
+  }
+
 }
