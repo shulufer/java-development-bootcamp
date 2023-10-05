@@ -5,6 +5,13 @@ public class City {
   private String country;
   private long population;
 
+  public City(String name, String country, long population) {
+    setName(name);
+    setCountry(country);
+    setPopulation(population);
+  }
+
+
 
   public String getName() {
     return this.name;
