@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Test {
 
   public static void main(String[] args) {
@@ -58,6 +60,20 @@ public class Test {
       return false;
     }
   }
+
+  public static String promptForCityName(Scanner scanner) {
+    while (true) {
+        System.out.print("\nPlease enter a valid city name: ");
+        String cityName = scanner.nextLine();
+        if(!isNullOrBlank(cityName)) {
+          continue;
+        } else {
+          return cityName;
+        }
+
+    }
+  }
+
 
 
 
