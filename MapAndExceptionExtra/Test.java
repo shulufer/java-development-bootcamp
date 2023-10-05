@@ -74,6 +74,18 @@ public class Test {
     }
   }
 
+  public static String promptForCountry(Scanner scanner) {
+    while (true) {
+        System.out.print("\nPlease enter a valid country: ");
+        String country = scanner.nextLine();
+        if(!isNullOrBlank(country)) {
+          continue;
+        } else {
+          return country;
+        }
+    }
+  }
+
 
 
 
