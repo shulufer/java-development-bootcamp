@@ -11,6 +11,16 @@ public class Car {
   private final static int MAX_PRICE = 200_000;
 
 
+  public Car(String make, String model, BodyType bodyType, int productionYear, double price) {
+    setMake(make);
+    setModel(model);
+    setBodyType(bodyType);
+    setProductionYear(productionYear);
+    setPrice(price);
+  }
+
+
+
   public BodyType getBodyType() {
     return bodyType;
   }
