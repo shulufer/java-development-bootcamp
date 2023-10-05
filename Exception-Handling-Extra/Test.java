@@ -54,34 +54,54 @@ public class Test {
     //   System.out.println("try and catch block is done.");
     // }
 
-    Magazine magazine1 = new Magazine("Magazine 1", "Publisher 1", 1, 2020);
-    Magazine magazine2 = new Magazine("Magazine 2", "Publisher 2", 2, 2021);
+    // Magazine magazine1 = new Magazine("Magazine 1", "Publisher 1", 1, 2020);
+    // Magazine magazine2 = new Magazine("Magazine 2", "Publisher 2", 2, 2021);
 
 
-    MagazineLibrary library = new MagazineLibrary();
+    // MagazineLibrary library = new MagazineLibrary();
 
-    // Test the addMagazine method
-    library.addMagazine(magazine1);
-    library.addMagazine(magazine2);
-
-
-    // Test the getMagazine method
-    Magazine retrievedMagazine = library.getMagazine(0);
-    System.out.println(retrievedMagazine.getTitle());
+    // // Test the addMagazine method
+    // library.addMagazine(magazine1);
+    // library.addMagazine(magazine2);
 
 
-    // Test the setMagazine method
-    Magazine newMagazine = new Magazine("Magazine 3", "Publisher 3", 3, 2022);
-    library.setMagazine(newMagazine, 0);
+    // // Test the getMagazine method
+    // Magazine retrievedMagazine = library.getMagazine(0);
+    // System.out.println(retrievedMagazine.getTitle());
 
 
-    // Verify that the magazine was updated
-    retrievedMagazine = library.getMagazine(0);
-    System.out.println(retrievedMagazine.getTitle());
+    // // Test the setMagazine method
+    // Magazine newMagazine = new Magazine("Magazine 3", "Publisher 3", 3, 2022);
+    // library.setMagazine(newMagazine, 0);
+
+
+    // // Verify that the magazine was updated
+    // retrievedMagazine = library.getMagazine(0);
+    // System.out.println(retrievedMagazine.getTitle());
 
 
 
 
 
   }
+
+  public static boolean isNullOrBlank(String input) {
+    boolean isNullOrBlank = true;
+    if (input == null || input == "") {
+      isNullOrBlank = false;
+    }
+    return isNullOrBlank;
+  }
+
+  public static boolean incorrectIssueNumber(int issueNumber) {
+    boolean incorrectIssueNumber = true;
+    if (issueNumber <= 0) {
+      incorrectIssueNumber = false;
+    }
+    return incorrectIssueNumber;
+  }
+
+
+
+
 }
