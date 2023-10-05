@@ -5,12 +5,12 @@ public class CityPopulationTracker {
   private HashMap<String, City> cityPopulations;
 
 
-  public CityPopulationTracker(HashMap<String,City> cityPopulations) {
+  public CityPopulationTracker() {
     this.cityPopulations = new HashMap<>();
   }
 
-  public City getCity(City city) {
-    return new City(city);
+  public City getCity(String cityName) {
+    return cityPopulations.get(new String(cityName));
   }
 
   public void setCity(City city) {
