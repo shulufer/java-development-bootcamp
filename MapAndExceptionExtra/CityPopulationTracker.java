@@ -9,6 +9,9 @@ public class CityPopulationTracker {
     this.cityPopulations = new HashMap<>();
   }
 
+  public City getCity(City city) {
+    return new City(city);
+  }
 
 
 }

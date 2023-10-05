@@ -11,6 +11,12 @@ public class City {
     setPopulation(population);
   }
 
+  public City(City city) {
+    this.name = city.getName();
+    this.country = city.getCountry();
+    this.population = city.getPopulation();
+  }
+
 
 
   public String getName() {
