@@ -1,7 +1,7 @@
 import java.time.LocalDate;
 import static constants.Regulation.*;
 import java.time.format.DateTimeFormatter;
-import constants.Position;
+import static constants.Position.*;
 
 public class Game {
 
@@ -21,8 +21,8 @@ public class Game {
             "\n*****************************************************************************" +
             "\n - This matchup takes place at the " + this.arena + " arena on " + formattedDate + "." +
             "\n - Tonight's game is between the " + home.getName() + " and the " + away.getName() + ".\n" +
-            "\n - The starting lineup for the home team is: at point guard, " + home.getPlayer(POINT_GUARD) + "; at shooting guard, " + home.getPlayer("SHOOTING_GUARD") + "; at small forward, " + home.getPlayer("SMALL_FORWARD") + "; at power forward, " + home.getPlayer("POWER_FORWARD") + "; and at center, " + home.getPlayer("CENTER") + ".\n" +
-            "\n - The starting lineup for the visiting team is: at point guard, " + away.getPlayer("POINT_GUARD") + "; at shooting guard, " + away.getPlayer("SHOOTING_GUARD") + "; at small forward, " + away.getPlayer("SMALL_FORWARD") + "; at power forward, " + away.getPlayer("POWER_FORWARD") + "; and at center, " + away.getPlayer("CENTER") + ".\n" +
+            "\n - The starting lineup for the home team is: at point guard, " + home.getPlayer(POINT_GUARD) + "; at shooting guard, " + home.getPlayer(SHOOTING_GUARD) + "; at small forward, " + home.getPlayer(SMALL_FORWARD) + "; at power forward, " + home.getPlayer(POWER_FORWARD) + "; and at center, " + home.getPlayer(CENTER) + ".\n" +
+            "\n - The starting lineup for the visiting team is: at point guard, " + away.getPlayer(POINT_GUARD) + "; at shooting guard, " + away.getPlayer(SHOOTING_GUARD) + "; at small forward, " + away.getPlayer(SMALL_FORWARD) + "; at power forward, " + away.getPlayer(POWER_FORWARD) + "; and at center, " + away.getPlayer(CENTER) + ".\n" +
             "\n - Let's give a warm round of applause for both teams as they take the court!" +
             "\n*****************************************************************************"
 

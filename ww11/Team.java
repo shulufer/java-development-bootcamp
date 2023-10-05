@@ -28,8 +28,8 @@ public class Team {
     }
 
     public void setPlayer(Position position, String player) {
-        if (!position.equals(SHOOTING_GUARD) || !position.equals(SMALL_FORWARD) || !position.equals(POWER_FORWARD) || !position.equals(CENTER) || !position.equals(POINT_GUARD)) {
-            throw new IllegalArgumentException("INVALID POSITION");
+        if (position == null) {
+          throw new IllegalArgumentException("Position cannot be null.");
         }
         this.players.put(position, player);
     }
