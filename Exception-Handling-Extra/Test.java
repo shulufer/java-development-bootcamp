@@ -118,8 +118,6 @@ public class Test {
         String title = scanner.nextLine();
         if (isNullOrBlank(title)) {
           return title;
-        } else {
-          continue;
         }
     }
   }
@@ -130,11 +128,29 @@ public class Test {
         String publisher = scanner.nextLine();
         if (isNullOrBlank(publisher)) {
           return publisher;
-        } else {
-          continue;
         }
     }
   }
+
+  public static int promptForIssueNumber(Scanner scanner) {
+    while (true) {
+        System.out.print("\nPlease enter a valid issue number (greater than 0): ");
+
+        // First check if the next input is not an integer
+        if (!scanner.hasNextInt()) {
+          scanner.next();
+          continue;
+        }
+        int scanInt = scanner.nextInt();
+        if (scanInt <= 0) {
+          continue;
+        } else {
+          return scanInt;
+        }
+
+    }
+}
+
 
 
 
