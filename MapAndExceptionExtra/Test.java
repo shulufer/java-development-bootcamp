@@ -84,7 +84,25 @@ public class Test {
           return country;
         }
     }
+
   }
+
+  public static int promptForPopulation(Scanner scanner) {
+    while (true) {
+        System.out.print("\nPlease enter a valid population (greater than 0): ");
+        // First check if the next input is not an integer
+
+        if (scanner.hasNextInt()) {
+          int population = scanner.nextInt();
+          if(incorrectPopulation(population)) {
+            continue;
+          } else {
+            return population;
+          }
+        }
+    }
+  }
+
 
 
 
