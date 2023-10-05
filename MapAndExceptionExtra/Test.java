@@ -42,6 +42,26 @@ public class Test {
     // // Verify that the city data was updated
     // nyCity = tracker.getCity("New York");
     // System.out.println("Updated population of New York: " + nyCity.getPopulation());
+    Scanner scanner = new Scanner(System.in);
+
+
+    String cityName = promptForCityName(scanner);
+
+
+    String country = promptForCountry(scanner);
+
+
+    int population = promptForPopulation(scanner);
+
+
+    City newCity = new City(cityName, country, population);
+
+
+    CityPopulationTracker tracker = new CityPopulationTracker();
+    tracker.addCity(newCity);
+
+
+    System.out.println("City added to the tracker: " + newCity.getName());
 
   }
 
@@ -65,7 +85,7 @@ public class Test {
     while (true) {
         System.out.print("\nPlease enter a valid city name: ");
         String cityName = scanner.nextLine();
-        if(!isNullOrBlank(cityName)) {
+        if(isNullOrBlank(cityName)) {
           continue;
         } else {
           return cityName;
@@ -78,7 +98,7 @@ public class Test {
     while (true) {
         System.out.print("\nPlease enter a valid country: ");
         String country = scanner.nextLine();
-        if(!isNullOrBlank(country)) {
+        if(isNullOrBlank(country)) {
           continue;
         } else {
           return country;
