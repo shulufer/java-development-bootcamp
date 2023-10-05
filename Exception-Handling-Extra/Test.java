@@ -81,6 +81,24 @@ public class Test {
     // retrievedMagazine = library.getMagazine(0);
     // System.out.println(retrievedMagazine.getTitle());
 
+    Scanner scanner = new Scanner(System.in);
+
+
+    String title = promptForTitle(scanner);
+    String publisher = promptForPublisher(scanner);
+    int issueNumber = promptForIssueNumber(scanner);
+    int publicationYear = promptForPublicationYear(scanner);
+
+
+    Magazine newMagazine = new Magazine(title, publisher, issueNumber, publicationYear);
+
+
+    MagazineLibrary library = new MagazineLibrary();
+    library.addMagazine(newMagazine);
+
+
+    System.out.println("Magazine added to the library: " + newMagazine.getTitle());
+
 
 
 
@@ -142,6 +160,7 @@ public class Test {
           continue;
         }
         int scanInt = scanner.nextInt();
+        scanner.nextLine();
         if (scanInt <= 0) {
           continue;
         } else {
@@ -153,11 +172,13 @@ public class Test {
 
   public static int promptForPublicationYear(Scanner scanner) {
     while (true) {
+      System.out.print("\nPlease enter a valid publication year (greater than 0): ");
         if (!scanner.hasNextInt()) {
           scanner.next();
           continue;
         }
         int scanInt = scanner.nextInt();
+        scanner.nextLine();
         if (scanInt <= 0) {
           continue;
         } else {
