@@ -124,12 +124,17 @@ public class Test {
     }
   }
 
-
-}
-
-
-
-
+  public static String promptForPublisher(Scanner scanner) {
+    while (true) {
+        System.out.print("\nPlease enter a valid publisher: ");
+        String publisher = scanner.nextLine();
+        if (isNullOrBlank(publisher)) {
+          return publisher;
+        } else {
+          continue;
+        }
+    }
+  }
 
 
 
