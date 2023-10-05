@@ -11,7 +11,14 @@ public class Magazine {
     setPublisher(publisher);
     setIssueNumber(issueNumber);
     setPublicationYear(publicationYear);
-}
+  }
+
+  public Magazine(Magazine magazine) {
+    setTitle(magazine.title);
+    setPublisher(magazine.publisher);
+    setIssueNumber(magazine.issueNumber);
+    setPublicationYear(magazine.publicationYear);
+  }
 
 
   public void setTitle(String title) {

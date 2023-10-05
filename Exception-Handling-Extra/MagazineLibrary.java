@@ -8,4 +8,8 @@ public class MagazineLibrary {
     magazines = new ArrayList<>();
   }
 
+  public Magazine getMagazine(int i) {
+    return new Magazine(magazines.get(i));
+  }
+
 }
