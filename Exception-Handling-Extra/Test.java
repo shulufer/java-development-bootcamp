@@ -101,6 +101,18 @@ public class Test {
     return incorrectIssueNumber;
   }
 
+  public static boolean incorrectPublicationYear(int publicationYear) {
+    boolean incorrectPublicationYear = true;
+    if (publicationYear <= 0) {
+      incorrectPublicationYear = false;
+    }
+    return incorrectPublicationYear;
+
+  }
+
+
+
+
 
 
 
