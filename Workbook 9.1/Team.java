@@ -13,20 +13,19 @@ public class Team {
     }
 
     public String getName() {
-        return name;
+        return new String(name);
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.name = new String(name);
     }
 
     public String getPlayer(String position) {
-        // TODO
-        return null;
+        return players.get(new String(position));
     }
 
     public void setPlayer(String position, String player) {
-        // TODO
+        players.put(new String(position), new String(player));
     }
 
 
