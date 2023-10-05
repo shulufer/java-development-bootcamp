@@ -12,4 +12,9 @@ public class MagazineLibrary {
     return new Magazine(magazines.get(i));
   }
 
+  public void addMagazine(Magazine magazine) {
+    magazines.add(new Magazine(magazine));
+
+  }
+
 }
