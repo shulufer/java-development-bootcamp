@@ -51,6 +51,17 @@ public class Test {
     }
   }
 
+  public static boolean incorrectPopulation(int population) {
+    if ((population <= 0)) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+
+
+
 
 
 
