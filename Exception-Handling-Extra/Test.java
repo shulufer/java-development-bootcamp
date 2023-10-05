@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Test {
 
   public static void main(String[] args) {
@@ -109,6 +111,23 @@ public class Test {
     return incorrectPublicationYear;
 
   }
+
+  public static String promptForTitle(Scanner scanner) {
+    while (true) {
+        System.out.print("\nPlease enter a valid title: ");
+        String title = scanner.nextLine();
+        if (isNullOrBlank(title)) {
+          return title;
+        } else {
+          continue;
+        }
+    }
+  }
+
+
+}
+
+
 
 
 
