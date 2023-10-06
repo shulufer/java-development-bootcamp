@@ -1,13 +1,15 @@
 import java.util.ArrayList;
 
-public class CarDEalership {
+public class CarDealership {
 
   ArrayList<Car> cars;
 
 
-  public CarDEalership(ArrayList<Car> cars) {
-    cars = new ArrayList<>(cars);
+  public CarDealership() {
+    cars = new ArrayList<>();
   }
+
+
 
   public Car getCar(int i) {
     return new Car(cars.get(i));
