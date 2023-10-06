@@ -18,6 +18,12 @@ public class CarDEalership {
     cars.add(i, new Car(car));
   }
 
+  public void addCar(Car car){
+    cars.add(new Car(car));
+  }
+
+
+
 
 
 }
