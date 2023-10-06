@@ -19,6 +19,14 @@ public class Car {
     setPrice(price);
   }
 
+  public Car(Car car) {
+    this.make = car.getMake();
+    this.model = car.getModel();
+    this.bodyType = car.getBodyType();
+    this.productionYear = car.getProductionYear();
+    this.price = car.getPrice();
+  }
+
 
 
   public BodyType getBodyType() {

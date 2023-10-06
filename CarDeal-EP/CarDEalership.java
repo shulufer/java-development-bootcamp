@@ -9,7 +9,14 @@ public class CarDEalership {
     cars = new ArrayList<>(cars);
   }
 
+  public Car getCar(int i) {
+    return new Car(cars.get(i));
+  }
 
+  public void setCar(int i, Car car) {
+    cars.remove(i);
+    cars.add(i, new Car(car));
+  }
 
 
 
