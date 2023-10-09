@@ -1,7 +1,7 @@
 public class Microscope extends LabEquipment{
 
   private int magnification;
-  private static final int MIN_MAGNIFICATION = 1960;
+  private static final int MIN_MAGNIFICATION = 1;
 
   public Microscope(String manufacturer, String model, int year, int magnification) {
     super(manufacturer, model, year);
