@@ -5,7 +5,7 @@ public class Lab {
   private ArrayList<LabEquipment> labEquipments;
 
   public Lab() {
-    labEquipments = new ArrayList<>(labEquipments);
+    labEquipments = new ArrayList<>();
   }
 
   public LabEquipment getLabEquipment(int i) {
