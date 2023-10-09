@@ -16,4 +16,8 @@ public class Lab {
     labEquipments.remove(i);
     labEquipments.add(i, labEquipment.clone());
   }
+
+  public void addLabEquipment(LabEquipment labEquipment) {
+    labEquipments.add(labEquipment.clone());
+  }
 }
