@@ -27,11 +27,11 @@ public class Main {
             "The Picture of Dorian Gray"
         );
 
-        // TODO
+        books.sort((book1, book2) -> book1.compareTo(book2));
 
         System.out.println("\nLibrary\n--------");
 
-        // TODO
+        books.forEach(book -> System.out.println(book));
 
     }
 }
