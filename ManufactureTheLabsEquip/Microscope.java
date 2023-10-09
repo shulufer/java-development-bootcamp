@@ -9,6 +9,13 @@ public class Microscope extends LabEquipment{
   }
 
 
+  public Microscope(Microscope microscope) {
+    super(microscope);
+    setMagnification(microscope.magnification);
+  }
+
+
+
   public int getMagnification() {
     return this.magnification;
   }

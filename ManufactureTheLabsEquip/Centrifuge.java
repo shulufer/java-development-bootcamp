@@ -9,6 +9,11 @@ public class Centrifuge extends LabEquipment {
     setMaxRPM(maxRPM);
   }
 
+  public Centrifuge(Centrifuge centrifuge) {
+    super(centrifuge);
+    setMaxRPM(centrifuge.maxRPM);
+  }
+
 
 
   public int getMaxRPM() {

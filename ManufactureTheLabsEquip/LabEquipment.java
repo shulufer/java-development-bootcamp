@@ -15,6 +15,14 @@ public abstract class LabEquipment {
   }
 
 
+  public LabEquipment(LabEquipment labEquipment) {
+    setManufacturer(labEquipment.manufacturer);
+    setModel(labEquipment.model);
+    setYear(labEquipment.year);
+  }
+
+
+
   public String getManufacturer() {
     return this.manufacturer;
   }
