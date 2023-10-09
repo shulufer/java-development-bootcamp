@@ -7,6 +7,14 @@ public abstract class LabEquipment {
   private static final int MIN_YEAR = 1950;
 
 
+
+  public LabEquipment(String manufacturer, String model, int year) {
+    setManufacturer(manufacturer);
+    setModel(model);
+    setYear(year);
+  }
+
+
   public String getManufacturer() {
     return this.manufacturer;
   }
