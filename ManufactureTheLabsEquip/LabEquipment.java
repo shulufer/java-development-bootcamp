@@ -21,6 +21,8 @@ public abstract class LabEquipment {
     setYear(labEquipment.year);
   }
 
+  public abstract LabEquipment clone();
+
 
 
   public String getManufacturer() {

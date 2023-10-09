@@ -36,4 +36,10 @@ public class Microscope extends LabEquipment{
   }
 
 
+  @Override
+  public LabEquipment clone() {
+    return new Microscope(this);
+    }
+
+
 }
