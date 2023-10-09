@@ -11,4 +11,9 @@ public class Lab {
   public LabEquipment getLabEquipment(int i) {
     return this.labEquipments.get(i).clone();
   }
+
+  public void setLabEquipment(int i, LabEquipment labEquipment) {
+    labEquipments.remove(i);
+    labEquipments.add(i, labEquipment.clone());
+  }
 }
