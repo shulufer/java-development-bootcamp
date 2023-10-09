@@ -27,6 +27,8 @@ public abstract class LabEquipment {
     }
   }
 
+  public abstract String performMaintenance();
+
   public String getModel() {
     return this.model;
   }

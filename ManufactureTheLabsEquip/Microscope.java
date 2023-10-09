@@ -23,4 +23,10 @@ public class Microscope extends LabEquipment{
   }
 
 
+  @Override
+  public String performMaintenance() {
+    return "Microscope maintenance: Clean the lenses and check the light source.";
+  }
+
+
 }

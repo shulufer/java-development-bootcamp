@@ -24,4 +24,11 @@ public class Centrifuge extends LabEquipment {
     }
   }
 
+
+
+  @Override
+  public String performMaintenance() {
+    return "Centrifuge maintenance: Check the rotor, clean the chamber, and lubricate the spindle.";
+  }
+
 }
