@@ -13,6 +13,24 @@ public class Main {
 
       names.forEach(name -> System.out.println("Hello, " + name + "!"));
 
+      List<String> usernames = Arrays.asList("sparklingunicorn", "galactic_goddess", "neon_ninja", "purplepixiedust");
+
+      String name = usernames.stream()
+                            .filter(username -> username.equals("neon_ninja"))
+                            .findFirst().orElse(null);
+
+      System.out.println("Found you: " + name);
+
+      List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6);
+
+      long countedNumbers = numbers.stream()
+                                  .filter(number -> number % 2 == 0)
+                                  .count();
+
+      System.out.println("There are " + countedNumbers + " even numbers in this list");
+
+
+
 
     }
 }
