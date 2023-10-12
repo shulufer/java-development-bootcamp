@@ -13,5 +13,13 @@ public class MovieStore {
     movies.add(new Movie(movie));
   }
 
+  public List<Movie> filterByGenre(String genre) {
+    return this.movies.stream()
+    .filter(movie -> movie.getGenre().equals(genre))
+    .toList();
+
+
+  }
+
 
 }
