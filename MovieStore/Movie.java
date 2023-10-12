@@ -67,4 +67,16 @@ public class Movie {
     this.raiting = raiting;
   }
 
+  @Override
+  public String toString() {
+    return "{" +
+      " name='" + getName() + "'" +
+      ", director='" + getDirector() + "'" +
+      ", genre='" + getGenre() + "'" +
+      ", year='" + getYear() + "'" +
+      ", raiting='" + getRaiting() + "'" +
+      "}";
+  }
+
+
 }
