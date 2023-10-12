@@ -7,7 +7,11 @@ public class MovieStore {
 
   public MovieStore() {
     this.movies = new ArrayList<>();
-}
+  }
+
+  public void addMovie(Movie movie) {
+    movies.add(new Movie(movie));
+  }
 
 
 }

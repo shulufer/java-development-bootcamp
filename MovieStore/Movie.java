@@ -19,6 +19,14 @@ public class Movie {
   }
 
 
+  public Movie(Movie movie) {
+    setName(movie.name);
+    setDirector(movie.director);
+    setGenre(movie.genre);
+    setYear(movie.year);
+    setRaiting(movie.raiting);
+  }
+
   public String getName() {
     return this.name;
   }
